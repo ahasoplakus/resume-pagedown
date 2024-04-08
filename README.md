@@ -1,3 +1,5 @@
+[![knit-cv](https://github.com/ahasoplakus/resume-pagedown/actions/workflows/knit-cv.yaml/badge.svg)](https://github.com/ahasoplakus/resume-pagedown/actions/workflows/knit-cv.yaml)
+
 # My Resume
 
 A workflow to programmatically generate my Professional Resume using [**pagedown**](https://github.com/rstudio/pagedown/) when
