@@ -31,7 +31,7 @@ jobs:
         run: |
           Rscript -e "pagedown::chrome_print('cv.html')"
 
-- name: commit cv
+     - name: commit cv
        run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
