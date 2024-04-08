@@ -1,8 +1,6 @@
 on:
   schedule:
-    - cron:  '30 18 * * 1'
-  push:
-    branches: [main]
+    - cron:  '10 13 * * 1'
 
 name: knit-cv
 
