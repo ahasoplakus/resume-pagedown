@@ -7,10 +7,9 @@ on:
 name: knit-cv
 
 jobs:
-  knit-cv:
+  build:
+    name: create the curriculum vitae
     runs-on: windows-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
