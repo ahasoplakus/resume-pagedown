@@ -1,3 +1,5 @@
+# script to create the radar chart of skills
+
 library(echarts4r)
 library(tibble)
 
