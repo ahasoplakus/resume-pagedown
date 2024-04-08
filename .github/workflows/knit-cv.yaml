@@ -7,38 +7,42 @@ on:
 name: knit-cv
 
 jobs:
-  build:
-    name: create the curriculum vitae
+  knit-cv:
     runs-on: windows-latest
-
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: r-lib/actions/setup-pandoc@v2
 
       - uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
 
       - uses: r-lib/actions/setup-renv@v2
+
       - uses: r-lib/actions/setup-tinytex@v2
       - run: tlmgr --version
-
-      - name: render the curriculum vitae
+      
+      - name: render cv
         run: |
           Rscript -e "rmarkdown::render(here::here('cv.Rmd'))"
-
+        
       - name: generate pdf
         run: |
           Rscript -e "pagedown::chrome_print('cv.html')"
 
-     - name: commit cv
-       run: |
+      - name: Commit files
+        run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add --all
           git commit -am "add the cv.pdf file to the 'docs' directory of the repository"
           git push
-     - name: Upload cv
-       uses: actions/upload-artifact@v1
-       with:
+      - name: Upload pdf file
+        uses: actions/upload-artifact@v1
+        with:
          name: docs
          path: docs/
