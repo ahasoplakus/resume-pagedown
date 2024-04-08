@@ -228,4 +228,4 @@ Virtual
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Built with [**pagedown**](https://github.com/rstudio/pagedown)<br>Last updated on `r Sys.Date()`
+Built with [**pagedown**](https://github.com/rstudio/pagedown)<br>Last updated on `r Sys.time()`
