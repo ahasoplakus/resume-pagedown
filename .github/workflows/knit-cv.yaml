@@ -26,18 +26,15 @@ jobs:
       - uses: r-lib/actions/setup-tinytex@v2
       - run: tlmgr --version
 
-      - name: render cv
+      - name: render rmd and generate pdf
         run: |
           Rscript -e "rmarkdown::render(here::here('cv.Rmd'))"
-
-      - name: generate pdf
-        run: |
-          Rscript -e "pagedown::chrome_print('cv.html', output = here::here('docs/cv.pdf'))"
+          Rscript -e "pagedown::chrome_print('cv.html')"
 
       - name: Commit files
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add --all
-          git commit -am "add the cv.pdf file to the 'docs' directory of the repository"
+          git commit -am "add the cv.pdf file to the root directory"
           git push
