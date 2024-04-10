@@ -36,5 +36,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add --all
-          git commit -am "add the cv.pdf file to the root directory"
+          git commit -am "Updated: `date +'%Y-%m-%d %H:%M:%S'`"
           git push
