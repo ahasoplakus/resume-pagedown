@@ -114,10 +114,10 @@ Main
 Sukalpo Saha {#title}
 --------------------------------------------------------------------------------
 
-### R and Shiny Developer with 6.5+ years of experience in the Pharmaceutical Industry
+### R and Shiny Developer with 7+ years of experience in the Pharmaceutical Industry
 
-Developing production ready R packages and Shiny applications which enable creation of company standard ADaM data sets, TLFs, and 
-interactive exploration of statistical analysis results, to support medical writing and/or publishing of the clinical study reports, planned analysis, and any other ad hoc result.
+Developing production ready R packages and Shiny applications which enable creation of company standard ADaM data sets, Tables and Figures, and 
+interactive exploration of statistical analysis results, to support medical writing and/or publishing of the clinical study reports, planned analysis, and any other adhoc result.
 
 Passionate about innovating, modernizing statistical programming and reporting using open-source tools and technologies (R/Python); building web applications with cutting edge UI/UX and data visualizations.
 
@@ -147,7 +147,7 @@ Present-2023
 
 Bangalore, IN
 
-2022 - 2021
+2023 - 2021
 
 ::: concise
 -   Work with clinical programmers/statistical analysts and other internal customers to understand business requirements and industry regulations.
@@ -209,6 +209,14 @@ Class: First
 Publications/Presentations {data-icon=file}
 --------------------------------------------------------------------------------
 
+### Posit Table Contest (Winner of Best Static Table Category)
+
+[Rolling Stones' Greatest Albums of All Time](https://ahasoplakus.quarto.pub/rollingstones/)
+
+Remote
+
+2024
+
 ### Clinical Visual Analytics for Review and Submission
 
 [Presentation](https://phuse.s3.eu-central-1.amazonaws.com/Archive/2023/SDE/APAC/Chennai/PRE_Chennai02.pdf) for PHUSE SDE India
@@ -228,4 +236,4 @@ Virtual
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Built with [**pagedown**](https://github.com/rstudio/pagedown)<br>Last updated on `r Sys.time()`
+Built with [**pagedown**](https://github.com/rstudio/pagedown)<br>Last updated on `r Sys.Date()`

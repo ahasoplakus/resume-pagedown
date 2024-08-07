@@ -13,7 +13,7 @@ tribble(
   "Data Analytics", 8,
   "Python", 6,
   "JMP", 8,
-  "Good Clinical Practice", 7,
+  "Quarto", 8,
   "Data Visualization", 9,
   "Git/Github", 8,
   "CDISC Standards", 7
