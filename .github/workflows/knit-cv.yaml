@@ -28,6 +28,7 @@ jobs:
 
       - name: render rmd and generate pdf
         run: |
+          Rscript -e "install.packages('servr')"
           Rscript -e "rmarkdown::render(here::here('templates/cv.Rmd'), output_file = here::here('cv.html'))"
           Rscript -e "pagedown::chrome_print('cv.html')"
 
