@@ -76,7 +76,7 @@ output:
 
 # Aside
 
-![Sukalpo Saha](imgs/ss.jpeg){width="80%"}
+![Sukalpo Saha](imgs/ss.jpg){width="80%"}
 
 ## Contact {#contact}
 
