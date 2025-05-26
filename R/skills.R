@@ -1,21 +1,20 @@
 # script to create the radar chart of skills
 
 library(echarts4r)
-library(tibble)
 
-tribble(
+tibble::tribble(
   ~ x, ~y,
-  "R", 10,
-  "Statistical Analysis", 8,
-  "Shiny", 10,
+  "R", 9.5,
+  "Shiny", 9,
   "SAS", 7,
-  "CI/CD", 8,
-  "Data Analytics", 8,
-  "Python", 6,
-  "JMP", 8,
+  "RBQM/QTLs", 8,
+  "Github Actions", 8,
+  "Python", 5,
+  "SAS JMP", 8,
+  "HTML/CSS", 7,
   "Quarto", 8,
-  "Data Visualization", 9,
-  "Git/Github", 8,
+  "Data Viz", 9,
+  "Git", 8,
   "CDISC Standards", 7
 ) |>
   e_charts(x) |>
@@ -30,6 +29,8 @@ tribble(
       radius = c("0%", "75%")
     )
   ) |>
-  e_color(color = "#84A7A1", background = "#27374D") |>
-  e_text_style(color = "#DDE6ED", fontSize = 30, fontFamily = "calibri") |>
+  e_color(color = "#7a00e6", background = "#fff") |>
+  e_text_style(color = "#23004C", fontSize = 25, fontFamily = "calibri") |>
   e_tooltip(trigger = "item")
+
+

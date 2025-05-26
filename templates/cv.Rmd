@@ -47,7 +47,7 @@ output:
 
 .pagedjs_page {
     --sidebar-background-width: 200px !important;
-    --sidebar-background-color: darkslategray !important;
+    --sidebar-background-color: #23004C !important;
 
 [data-id="main"] {
     width: 6in;
@@ -62,7 +62,7 @@ output:
     border-radius: 85px !important;
 }
 
-#skills-overview > p > img {
+#skills-summary > p > img {
     max-width: 80%;
     position: relative;
     right: -66px;
@@ -70,7 +70,7 @@ output:
 }
 
 #disclaimer > p > a {
-   color: #84A7A1;
+   color: #7A00E6;
 }
 ```
 
@@ -108,21 +108,35 @@ output:
 -   Bengali
 -   Hindi
 
-Main
-================================================================================
+# Main
 
-Sukalpo Saha {#title}
---------------------------------------------------------------------------------
+## Sukalpo Saha {#title}
 
-### R and Shiny Developer with 7.5+ years of experience in the Pharmaceutical Industry
+### R and Shiny Developer with 8+ years of experience in the Pharmaceutical Industry
 
-Developing production ready R packages and Shiny applications which enable creation of company standard ADaM data sets, Tables and Figures, and 
-interactive exploration of statistical analysis results, to support medical writing and/or publishing of the clinical study reports, planned analysis, and any other adhoc result.
+Developing production ready R packages and Shiny applications which enable creation of company standard ADaM data sets, Tables and Figures, and interactive exploration of statistical analysis results, to support medical writing and/or publishing of the clinical study reports, planned analysis, and any other adhoc result.
 
 Passionate about innovating, modernizing statistical programming and reporting using open-source tools and technologies (R/Python); building web applications with cutting edge UI/UX and data visualizations.
 
-Experience {data-icon="suitcase"}
---------------------------------------------------------------------------------
+## Experience {data-icon="suitcase"}
+
+### ![Sanofi](imgs/sanofi.png){width="15%"}
+
+<b>Analytics Principal Statistical Programmer</b>
+
+Hyderabad, IN
+
+Present - 2025
+
+::: concise
+-   As a Senior Clinical Analytics Specialist (CAS), responsible for the design, development, and implementation of multiple, complex R-based packages and Shiny applications.
+-   Provide technical guidance and mentor junior CAS members and drive innovation in R package and Shiny development practices.
+-   Collaborate with Clinical Analytics Specialists, Statistical Scientists, project leads and other stakeholders to design, develop, document, test and maintain multiple, complex R based packages and Shiny applications, ensuring scalability, performance, and maintainability, following internal and external guidance’s.
+-   Collaborate with stakeholders to gather requirements, define project scope, and propose technical solutions aligned with business objectives.
+-   Drive innovation in R package and Shiny development practices, exploring new technologies, tools, and methodologies to improve efficiency and quality.
+-   Establish and enforce coding standards, best practices, and guidelines for R package and Shiny development within the team.
+-   Conduct performance optimization and code re-factoring to improve the overall efficiency and reliability of R-based software solutions.
+:::
 
 ### ![Pfizer](imgs/pfizer.png){width="15%"}
 
@@ -130,7 +144,7 @@ Experience {data-icon="suitcase"}
 
 Mumbai, IN
 
-Present-2022
+2025 - 2022
 
 ::: concise
 -   Maintaining the [admiralvaccine](https://pharmaverse.github.io/admiralvaccine/) R package (Vaccine extension of <b>admiral</b>) within the [pharmaverse](https://github.com/pharmaverse) group of packages.
@@ -174,10 +188,9 @@ Mumbai, IN
 -   Created a Shiny application to monitor the impact of Covid-19 on Clinical data quality based on Adverse Events, Protocol Deviations, Missing Visits etc
 :::
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
+## Education {data-icon="graduation-cap" data-concise="true"}
 
-### ![](imgs/uoh.png){width=30px style="display: inline-block;; margin:0 auto"} University of Hyderabad
+### ![](imgs/uoh.png){width="30px" style="display: inline-block;; margin:0 auto"} University of Hyderabad
 
 M.Sc in Statistics
 
@@ -189,7 +202,7 @@ Specialization: Biostatistics, Operations Research
 
 Class: First
 
-### ![](imgs/uoc.jpg){width=30px style="display: inline-block;; margin:0 auto"} University of Calcutta
+### ![](imgs/uoc.jpg){width="30px" style="display: inline-block;; margin:0 auto"} University of Calcutta
 
 B.Sc in Statistics
 
@@ -201,17 +214,23 @@ Major: Statistics <br> Minors: Economics, Mathematics </br>
 
 Class: First
 
-
-## Skills Overview {data-icon="laptop"}
+## Skills Summary {data-icon="laptop"}
 
 ![](imgs/skills.png){width="100%"}
 
-Publications/Presentations {data-icon=file}
---------------------------------------------------------------------------------
+## Publications/Presentations {data-icon="file"}
 
 ### Posit Table Contest (Winner of Best Static Table Category)
 
 [Rolling Stones' Greatest Albums of All Time](https://ahasoplakus.quarto.pub/rollingstones/)
+
+Remote
+
+2024
+
+### Posit Table Contest (Honorable Mention)
+
+[Tidy Shift Tables in R](https://ahasoplakus.quarto.pub/shift2r/)
 
 Remote
 
@@ -233,7 +252,6 @@ Virtual
 
 2020
 
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
+## Disclaimer {#disclaimer}
 
 Built with [**pagedown**](https://github.com/rstudio/pagedown)<br>Last updated on `r Sys.Date()`
