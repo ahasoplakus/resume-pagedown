@@ -1,5 +1,3 @@
-# script to create the radar chart of skills
-
 library(echarts4r)
 
 tibble::tribble(
@@ -22,15 +20,17 @@ tibble::tribble(
     y,
     max = 10,
     legend = FALSE,
-    areaStyle = list(),
+    areaStyle = list(opacity = 0.25),
     radar = list(
       shape = "polygon",
-      splitLine = list(show = FALSE),
+      splitArea = list(show = FALSE),
+      splitLine = list(
+        show = TRUE,
+        lineStyle = list(color = c("#606060", "#606060"))
+      ),
       radius = c("0%", "75%")
     )
   ) |>
   e_color(color = "#7a00e6", background = "#fff") |>
-  e_text_style(color = "#23004C", fontSize = 25, fontFamily = "calibri") |>
+  e_text_style(color = "#23004C", fontSize = 20, fontFamily = "calibri") |>
   e_tooltip(trigger = "item")
-
-
